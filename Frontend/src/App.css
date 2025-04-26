@@ -1,0 +1,111 @@
+/* Dashboard background */
+.dashboard-background {
+  background-image: url("../src/assets/images/light-gray-abstract-background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login background */
+.login-background {
+  background-image: url("../src/assets/images/loginimage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* 🌟 Skeleton shimmer effect */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 25%,
+    #e0e0e0 50%,
+    #f0f0f0 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* ✨ Grow animations */
+@keyframes growOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes growOutHelp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* 🔥 Apply grow animations */
+.animate-grow-out {
+  animation: growOut 0.5s ease-out forwards;
+}
+
+.animate-grow-out-help {
+  animation: growOutHelp 0.5s ease-out forwards;
+}
+
+
+
+
+/*frogot password*/
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+
+
+/*forecat generation bar*/
+
+@keyframes loadingBar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 1.5s linear infinite;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
