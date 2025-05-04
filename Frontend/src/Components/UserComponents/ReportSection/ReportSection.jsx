@@ -120,7 +120,7 @@ const ReportSection = () => {
     accuracy:
       "Displays the accuracy of the forecasting model using MAE and R² score metrics for each rice type.",
     forecastTable:
-      "Shows a 30-day forecast of rice sales including date-wise predicted quantities.",
+      "Shows a 90-day forecast of rice sales including date-wise predicted quantities.",
     inventoryImpact:
       "Highlights how current inventory levels are affected by forecasted sales and indicates potential shortages.",
     riceBreakdown:
@@ -223,7 +223,7 @@ const exportPDF = () => {
   }
 
   if (sections.forecastTable && filteredForecast.length > 0) {
-    addSectionTitle("Forecast (Next 30 Days)");
+    addSectionTitle("Forecast");
     addDescription(sectionDescriptions.forecastTable);
     autoTable(doc, {
       ...tableOptions,

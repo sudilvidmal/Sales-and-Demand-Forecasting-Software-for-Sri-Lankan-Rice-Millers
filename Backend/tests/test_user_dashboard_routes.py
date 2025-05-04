@@ -13,7 +13,7 @@ def override_get_current_user():
     app.dependency_overrides[get_current_user] = fake_user
 
 
-# ✅ Helper to wrap return values in AsyncMock correctly
+#  Helper to wrap return values in AsyncMock correctly
 def mock_aggregate_result(result_list):
     agg = AsyncMock()
     agg.to_list = AsyncMock(return_value=result_list)

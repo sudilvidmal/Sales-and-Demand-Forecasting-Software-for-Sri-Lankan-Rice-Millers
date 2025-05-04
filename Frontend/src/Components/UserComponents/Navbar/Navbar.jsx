@@ -81,7 +81,7 @@ const Navbar = ({ onToggleSidebar }) => {
       >
         {/* 🍔 Mobile Sidebar Toggle */}
         <button
-          className="text-white text-2xl md:hidden focus:outline-none hover:text-gray-200 transition-all duration-200"
+          className="text-blue-500 text-2xl md:hidden focus:outline-none hover:text-gray-200 transition-all duration-200"
           onClick={onToggleSidebar}
         >
           <HiMenu />

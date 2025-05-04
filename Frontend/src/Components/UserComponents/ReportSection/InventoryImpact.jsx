@@ -74,7 +74,7 @@ const InventoryImpact = ({ inventory, onFilteredChange }) => {
                 Current Stock (KG)
               </th>
               <th className="p-3 border text-left font-semibold">
-                Forecast (30 Days)
+                Forecast (90 Days)
               </th>
               <th className="p-3 border text-left font-semibold">
                 After Forecast
